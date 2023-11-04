@@ -1,7 +1,0 @@
-{
-  "date": "2023-11-04T13:11:01.014Z",
-  "preset": "static",
-  "commands": {
-    "preview": "npx serve ./public"
-  }
-}
