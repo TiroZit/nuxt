@@ -1,1 +1,0 @@
-import{_ as t}from"./nuxt-link.8bd8bd46.js";import{_ as o,c as a,b as s,w as c,a as n,o as _,d as r}from"./entry.fa0049ef.js";const d={},x=n("h1",{class:"text-8xl m-auto flex justify-center"}," Index page ",-1);function f(i,l){const e=t;return _(),a("div",null,[x,s(e,{to:"/about"},{default:c(()=>[r(" asdasd ")]),_:1})])}const p=o(d,[["render",f]]);export{p as default};
