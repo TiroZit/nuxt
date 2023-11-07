@@ -599,7 +599,7 @@ module.exports = {
 		'declaration-block-trailing-semicolon': null,
 	},
 	ignoreFiles: [
-		'**/*.*',
+		'**/*',
 		'!./src/**/*.sass',
 		'!./src/**/*.css',
 		'!./src/**/*.vue',
