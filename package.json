@@ -1,9 +1,9 @@
 {
-	"name": "nuxt-template",
+	"name": "nuxt-app",
 	"type": "module",
 	"private": true,
 	"engines": {
-		"node": ">=18"
+		"node": ">=18.13"
 	},
 	"scripts": {
 		"build": "npm run lint && nuxt build",
@@ -12,7 +12,7 @@
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
 		"deploy": "npm run generate && gh-pages -d dist",
-		"lint": "eslint --fix"
+		"lint": "eslint --fix . && stylelint --fix **/*.{sass,vue}"
 	},
 	"browserslist": [
 		">1%",
@@ -23,14 +23,26 @@
 		"last 3 safari version"
 	],
 	"dependencies": {
-		"@nuxt/ui": "2.10.0"
+		"@nuxt/ui": "2.10.0",
+		"tailwindcss": "3.3.5",
+		"vue": "3.3.8",
+		"vue-router": "4.2.5"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "1.1.1",
 		"@nuxt/devtools": "1.0.2",
+		"@nuxt/devtools-ui-kit": "1.0.2",
 		"@stylistic/eslint-plugin": "1.2.0",
+		"autoprefixer": "10.4.16",
 		"eslint": "8.53.0",
 		"gh-pages": "6.0.0",
-		"nuxt": "3.8.1"
+		"nuxt": "3.8.1",
+		"sass": "1.69.5",
+		"stylelint": "15.11.0",
+		"stylelint-config-html": "1.1.0",
+		"stylelint-config-recommended-scss": "13.1.0",
+		"stylelint-config-recommended-vue": "1.5.0",
+		"stylelint-order": "6.0.3",
+		"sugarss": "4.0.1"
 	}
 }

@@ -598,11 +598,5 @@ module.exports = {
 		'declaration-block-semicolon-space-before': null,
 		'declaration-block-trailing-semicolon': null,
 	},
-	ignoreFiles: [
-		'**/*',
-		'!./src/**/*.sass',
-		'!./src/**/*.css',
-		'!./src/**/*.vue',
-	],
 	fix: true,
 };
