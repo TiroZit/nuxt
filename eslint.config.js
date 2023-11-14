@@ -13,7 +13,6 @@ export default antfu({
 
 	rules: {
 		'style/semi': ['error', 'always'],
-		'no-console': 'off',
 		'eslint-comments/no-unlimited-disable': 'off',
 	},
 
