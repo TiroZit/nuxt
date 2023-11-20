@@ -35,7 +35,7 @@
 		"@stylistic/eslint-plugin": "1.2.0",
 		"autoprefixer": "10.4.16",
 		"eslint": "8.53.0",
-		"gh-pages": "6.0.0",
+		"gh-pages": "6.1.0",
 		"nuxt": "3.8.1",
 		"nuxt-mongoose": "1.0.3",
 		"sass": "1.69.5",
