@@ -34,7 +34,7 @@
 		"@nuxt/devtools-ui-kit": "1.0.4",
 		"@stylistic/eslint-plugin": "1.4.1",
 		"autoprefixer": "10.4.16",
-		"eslint": "8.54.0",
+		"eslint": "8.55.0",
 		"gh-pages": "6.1.0",
 		"nuxt": "3.8.2",
 		"nuxt-mongoose": "1.0.3",
