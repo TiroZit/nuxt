@@ -23,7 +23,7 @@
 		"last 3 safari version"
 	],
 	"dependencies": {
-		"@nuxt/ui": "2.11.0",
+		"@nuxt/ui": "2.11.1",
 		"tailwindcss": "3.3.6",
 		"vue": "3.3.11",
 		"vue-router": "4.2.5"
