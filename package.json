@@ -30,8 +30,8 @@
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "2.4.4",
-		"@nuxt/devtools": "1.0.5",
-		"@nuxt/devtools-ui-kit": "1.0.5",
+		"@nuxt/devtools": "1.0.6",
+		"@nuxt/devtools-ui-kit": "1.0.6",
 		"autoprefixer": "10.4.16",
 		"eslint": "8.55.0",
 		"gh-pages": "6.1.0",
