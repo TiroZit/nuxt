@@ -33,7 +33,7 @@
 		"@nuxt/devtools": "1.0.5",
 		"@nuxt/devtools-ui-kit": "1.0.5",
 		"autoprefixer": "10.4.16",
-		"eslint": "8.55.0",
+		"eslint": "8.56.0",
 		"gh-pages": "6.1.0",
 		"nuxt": "3.8.2",
 		"nuxt-mongoose": "1.0.3",
