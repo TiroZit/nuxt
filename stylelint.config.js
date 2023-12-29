@@ -1,3 +1,6 @@
+import sugarss from 'sugarss';
+import postcssHtml from 'postcss-html';
+
 const options = {
 	rules: [
 		{
@@ -6,11 +9,11 @@ const options = {
 		},
 	],
 
-	sass: require('sugarss'),
+	sass: sugarss,
 };
-const syntax = require('postcss-html')(options);
+const syntax = postcssHtml(options);
 
-module.exports = {
+export default {
 	extends: [
 		'stylelint-config-html/vue',
 		'stylelint-config-recommended-scss',
@@ -20,7 +23,7 @@ module.exports = {
 	overrides: [
 		{
 			files: ['**/*.sass'],
-			customSyntax: require('sugarss'),
+			customSyntax: sugarss,
 		},
 		{
 			files: ['**/*.{vue,html}'],
@@ -39,6 +42,18 @@ module.exports = {
 				type: 'at-rule',
 				name: 'include',
 				parameter: 'icon',
+				hasBlock: true,
+			},
+			{
+				type: 'at-rule',
+				name: 'include',
+				parameter: 'from',
+				hasBlock: true,
+			},
+			{
+				type: 'at-rule',
+				name: 'include',
+				parameter: 'until',
 				hasBlock: true,
 			},
 			{
@@ -435,7 +450,6 @@ module.exports = {
 				ignoreAtRules: ['else'],
 			},
 		],
-		'at-rule-name-newline-after': null,
 		'at-rule-no-unknown': null,
 		'at-rule-no-vendor-prefix': true,
 		'block-no-empty': [
@@ -486,10 +500,8 @@ module.exports = {
 		'media-feature-name-no-unknown': true,
 		'media-feature-name-no-vendor-prefix': true,
 		'no-duplicate-selectors': true,
-		'no-empty-first-line': null,
 		'no-empty-source': null,
 		'no-invalid-double-slash-comments': true,
-		'no-missing-end-of-source-newline': null,
 		'no-unknown-animations': null,
 		'number-max-precision': null,
 		'property-no-unknown': [
@@ -541,7 +553,7 @@ module.exports = {
 				ignoreFunctions: ['/$^/', 'var'],
 			},
 		],
-		'value-no-vendor-prefix': true,
+		'value-no-vendor-prefix': null,
 		'scss/at-else-empty-line-before': 'never',
 		'scss/at-else-if-parentheses-space-before': 'always',
 		'scss/at-extend-no-missing-placeholder': null,
@@ -586,17 +598,15 @@ module.exports = {
 		'scss/operator-no-unspaced': true,
 		'scss/partial-no-import': null,
 		'scss/percent-placeholder-pattern': null,
-		'block-closing-brace-empty-line-before': null,
-		'block-closing-brace-newline-after': null,
-		'block-closing-brace-newline-before': null,
-		'block-closing-brace-space-before': null,
-		'block-opening-brace-newline-after': null,
-		'block-opening-brace-space-after': null,
-		'block-opening-brace-space-before': null,
-		'declaration-block-semicolon-newline-after': null,
-		'declaration-block-semicolon-space-after': null,
-		'declaration-block-semicolon-space-before': null,
-		'declaration-block-trailing-semicolon': null,
 	},
+	ignoreFiles: [
+		'**/*',
+		'!./src/**/*.sass',
+		'!./src/**/*.vue',
+		'node_modules/',
+		'dist/',
+		'.git/',
+		'.vscode/',
+	],
 	fix: true,
 };
