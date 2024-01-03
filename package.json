@@ -37,7 +37,7 @@
 		"gh-pages": "6.1.1",
 		"nuxt": "3.9.0",
 		"nuxt-mongoose": "1.0.3",
-		"sass": "1.69.6",
+		"sass": "1.69.7",
 		"stylelint": "16.1.0",
 		"stylelint-config-html": "1.1.0",
 		"stylelint-config-recommended-scss": "14.0.0",
